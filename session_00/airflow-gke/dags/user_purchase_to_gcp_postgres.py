@@ -59,7 +59,7 @@ with DAG(
         task_id="load_csv_to_sql",
         google_cloud_storage_conn_id="google_cloud_default",
         sql=SQL_INSTANCE_CONNECTION_ID,
-        table=SQL_DATABASE_NAME + "." + SQL_TABLE_NAME,
+        table=f"{SQL_DATABASE_NAME}.{SQL_TABLE_NAME}",
         file_id=GCS_FILE_NAME,
         delimiter=",",
         quotechar='"',
@@ -74,4 +74,3 @@ with DAG(
     end_task = DummyOperator(task_id="end_task")
 
     start_task >> create_postgres_table >> clear_postgres_table >> load_csv_to_sql >> validate_data >> end_task
-
