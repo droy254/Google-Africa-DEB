@@ -55,7 +55,7 @@ dags:
   ## - only dags under this path within your repo will be seen by airflow,
   ##  (note, the full repo will still be cloned)
   ##
-  repoSubPath: Session_00/airflow-gke/dags
+  repoSubPath: session_00/airflow-gke/dags
   ## the git branch to check out
   ##
   branch: main
