@@ -114,7 +114,7 @@ root of the project named as *terraform.tfvars*, changing the property *project_
     Your release is named airflow.
     You can now access your dashboard(s) by executing the following command(s) and visiting the corresponding port at localhost in your browser:
     
-    Airflow Webserver:     kubectl port-forward svc/airflow-webserver 8080:8080 --namespace airflow
+    Airflow Webserver:     kubectl port-forward svc/airflow-web 8080:8080 --namespace airflow
     Default Webserver (Airflow UI) Login credentials:
         username: admin
         password: admin
