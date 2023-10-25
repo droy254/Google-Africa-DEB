@@ -1,0 +1,5 @@
+project_id  = "cap01project"
+location    = "US"
+region      = "us-east1"
+zone        = "us-east1-b"
+bucket_name = "cap01bucket"

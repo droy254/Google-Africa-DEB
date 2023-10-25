@@ -1,4 +1,4 @@
-project_id = "cap01project"
+project_id = "deb-capstone"
 region   = "us-east1"
 location = "us-east1-b"
 

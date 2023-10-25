@@ -82,10 +82,6 @@ root of the project named as *terraform.tfvars*, changing the property *project_
     ```
 
 10. Create a namespace for Airflow:
-    ```bash
-    kubectl delete namespace airflow
-    helm repo remove apache-airflow https://airflow.apache.org
-    ```
 
     ```bash
     kubectl create namespace airflow
