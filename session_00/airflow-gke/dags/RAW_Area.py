@@ -5,7 +5,6 @@ from airflow.providers.google.cloud.operators.gcs import GoogleCloudStorageOpera
 
 # Define DAG parameters
 DAG_ID = "RAW_Area"
-SCHEDULE_INTERVAL = "@once"
 POSTGRES_CONN_ID = "google_cloud_sql"
 GCS_CONN_ID = "google_cloud_default"
 GCS_BUCKET_NAME = "cap_bucket"
@@ -18,7 +17,7 @@ MOVIE_REVIEW_CSV_PATH = "https://drive.google.com/uc?export=download&id=1iFZOCsv
 # Create DAG
 with DAG(
     dag_id=DAG_ID,
-    schedule_interval=SCHEDULE_INTERVAL,
+    schedule_interval='@once', 
     start_date=datetime(2023, 10, 26),
     tags=["Wizeline", "Capstone"],
 ) as dag:

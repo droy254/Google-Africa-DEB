@@ -29,7 +29,7 @@ xml_schema = StructType([
 # DAG definition
 with DAG(
     dag_id="STAGE_Area",
-    schedule_interval=None,  # Set to your desired schedule
+    schedule_interval='@once',  
     start_date=datetime(2023, 10, 26),
     tags=["Wizeline", "Capstone"],
 ) as dag:
